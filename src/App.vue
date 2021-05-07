@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="mt-16">
-    <div class="container max-w-full mx-auto px-4 prose">
+    <div class="container max-w-full flex justify-center px-4">
       <HelloWorld />
     </div>
   </div>

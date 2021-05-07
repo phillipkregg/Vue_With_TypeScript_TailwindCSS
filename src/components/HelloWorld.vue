@@ -1,11 +1,20 @@
 <template>
-  <div class="">
+  <div class="prose prose-xl">
+    <h2 class=" relative font-dosis">
+      Hey ya'll, it's
+      <h1
+        class="bg-green-400 text-white py-5 px-5 font-inconsolata  absolute -top-20 left-1/4"
+      >
+        Vue
+      </h1>
+    </h2>
+
     <h1
-      class="shadow-xl px-4 py-4 bg-blue-900 text-gray-100 flex justify-center font-inconsolata"
+      class="shadow-xl px-4 py-4 bg-blue-200 text-gray-800 flex justify-center font-pacifico leading-tight"
     >
-      Welcome to VUE with TypeScript!
+      Now with TypeScript and Tailwind!
     </h1>
-    <h2 class="flex justify-center font-pacifico" v-html="youMadeIt"></h2>
+    <h2 class="flex justify-center font-dosis" v-html="youMadeIt"></h2>
     <div class="flex justify-center">
       <img
         class=""
