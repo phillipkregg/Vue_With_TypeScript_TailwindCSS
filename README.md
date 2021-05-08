@@ -45,4 +45,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 After running `npm run serve` visit `localhost:8080` and you should see this:
 
-![Welcome to Vue with TypeScript and Tailwind!](https://i.imgur.com/iCfw8cV.png)
+![Welcome to Vue with TypeScript and Tailwind!](https://i.imgur.com/ZHku3g8.png)
