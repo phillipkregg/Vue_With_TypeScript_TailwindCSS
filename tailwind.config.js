@@ -6,6 +6,7 @@ module.exports = {
       dosis: ["Dosis"],
       inconsolata: ["Inconsolata"],
       pacifico: ["Pacifico"],
+      dancingScript: ["Dancing Script"],
     },
     extend: {},
   },
