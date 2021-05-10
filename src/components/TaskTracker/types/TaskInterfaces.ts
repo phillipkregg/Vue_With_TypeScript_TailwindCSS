@@ -3,4 +3,5 @@ export interface TaskType {
   name: String;
   created_at: String;
   due_date: String;
+  reminder: boolean;
 }
