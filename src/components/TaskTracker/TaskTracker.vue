@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-full prose shadow-xl">
-    <Header title="Task Tracker" />
+    <Header @reload="reRenderTaskTracker" title="Task Tracker" />
     <Tasks
       @delete-task="deleteTask"
       @toggle-reminder="toggleReminder"
@@ -56,6 +56,9 @@ export default Vue.extend({
     },
     toggleReminder(task: TaskType) {
       task.reminder = !task.reminder;
+    },
+    reRenderTaskTracker() {
+      this.$emit("reload-task-tracker");
     },
   },
 });
