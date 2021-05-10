@@ -1,5 +1,6 @@
 module.exports = {
-  purge: ["./public/**/*.html", "./src/**/*.vue", "./src/**/*.ts"],
+  mode: "jit",
+  purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
@@ -13,6 +14,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  important: "html",
+  //important: "html",
   plugins: [require("@tailwindcss/typography")],
 };

@@ -1,9 +1,9 @@
 <template>
-  <div class="prose prose-xl">
-    <h2 class="relative font-dosis">
-      Hey ya'll, it's
+  <div class="prose m-auto prose-xl">
+    <h2 class="md:relative font-dosis">
+      {{ message }}
       <h1
-        class="bg-green-400 text-white py-5 px-5 font-inconsolata  absolute -top-20 left-1/4"
+        class="bg-green-400 text-white py-5 px-5 font-inconsolata  md:absolute -top-20 left-1/4"
       >
         Vue
       </h1>
@@ -14,7 +14,6 @@
     >
       Now with TypeScript and Tailwind!
     </h1>
-    <h2 class="flex justify-center font-dosis" v-html="message"></h2>
   </div>
 </template>
 
@@ -25,7 +24,7 @@ export default Vue.extend({
   name: "HelloWorld",
   data() {
     return {
-      message: "Here, enjoy this counter component!",
+      message: "Hey ya'll, it's",
     };
   },
 });

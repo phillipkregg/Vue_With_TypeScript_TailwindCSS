@@ -1,5 +1,6 @@
 <template>
-  <div class="prose">
+  <div class="prose bg-gray-50 p-10 m-auto">
+    <h1 class="flex justify-center font-dosis" v-html="message"></h1>
     <h2 class="font-pacifico text-gray-600">
       Current Count:
     </h2>
@@ -8,8 +9,9 @@
     >
       {{ this.counter }}
     </div>
-    <div class="flex">
-      <button
+    <div class="flex justify-center">
+      <counter-button :counter="counter" :shadow="false" :purpose="decrement" />
+      <!-- <button
         @click="decrement"
         @mousedown="onDecrementPress"
         @mouseup="onDecrementUp"
@@ -38,7 +40,7 @@
             />
           </svg>
         </i>
-      </button>
+      </button> -->
       <button
         @click="increment"
         @mousedown="onIncrementPress"
@@ -73,11 +75,18 @@
 
 <script lang="ts">
 import Vue from "vue";
+import CounterButton from "./CounterButton.vue";
 
 export default Vue.extend({
   name: "Counter",
+
+  components: {
+    CounterButton,
+  },
+
   data() {
     return {
+      message: "Here, enjoy this random counter:",
       counter: 0,
       x: 0,
       showIncrementShadow: true,
